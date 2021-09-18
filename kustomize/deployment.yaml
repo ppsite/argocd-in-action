@@ -1,0 +1,30 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: flask-demo
+  namespace: flask-demo
+  labels:
+    app: flask-demo
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-demo
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: flask-demo
+        version: v1
+    spec:
+      containers:
+        - name: flask-demo
+          image: 364950776/flask-demo
+          ports:
+            - name: http-5000
+              containerPort: 5000
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: envs

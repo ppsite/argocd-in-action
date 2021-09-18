@@ -1,0 +1,5 @@
+DB_USERNAME: csbox
+DB_PASSWORD: csbox
+DB_HOST: 10.10.17.155
+DB_PORT: 30647
+DB_NAME: postgres
