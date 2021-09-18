@@ -8,3 +8,5 @@ configMapGenerator:
   - name: envs
     files:
       - envs.yaml
+generatorOptions:
+  disableNameSuffixHash: true
