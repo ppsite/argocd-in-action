@@ -1,5 +1,21 @@
-DB_USERNAME=root
-DB_PASSWORD=password
-DB_HOST=127.0.0.1
-DB_PORT=9527
-DB_NAME=demo
+{
+        "data": "ENC[AES256_GCM,data:OqkHQhJHa191ZXiBVoSkfI+8rs4WY9scWmeTIBOyFv+kEZ9SFVHIH5jP0+CCa4yeH2+7Grfn87BSaw10G9Lzi723fpHvF1/YazLlypQXv1kC,iv:EM/eQOuTVfC2i8Ioz28q+qspG/DbF0jJt5a2sPGm7Lc=,tag:2UtTmsUxig4h/doj1dwLSQ==,type:str]",
+        "sops": {
+                "kms": null,
+                "gcp_kms": null,
+                "azure_kv": null,
+                "hc_vault": null,
+                "age": null,
+                "lastmodified": "2021-09-20T07:58:43Z",
+                "mac": "ENC[AES256_GCM,data:DXUzH621ByhpfW91+KAomCy+1CAUFlYSeBMKlExzwFDKozk68tN3kvZpY4cvdP9pZh9CQ2rsC4YepXPnvYfBUbFN6DkRRO+mub7JFAVV5YoTbDnblfQcFq74FemSouE5TsUQtoieznBFmcFwOgd5fgFDL7zUyTdbwn8Td+ZhI2M=,iv:Og6ccn0GkHtFPxylLsRoMIpzTecN4yergofWRWJTloo=,tag:22DDKDdF3PyHVhlR+yPUqQ==,type:str]",
+                "pgp": [
+                        {
+                                "created_at": "2021-09-20T07:58:42Z",
+                                "enc": "-----BEGIN PGP MESSAGE-----\n\nhQIMAx/I7fYaJfyoAQ//SqaNbprO4Q5M0vFNAR2C6TCkQcKzcNUSAmUPVVn9EDkw\n70+Lj99R1kZ0ZPI9/dagw1DkXdEGVQ6VJ1IM3r4aqDaNyy2/ztCY8byO2nD+qdra\nIpZ3d6kJZiOm3Vsr0z9rHn/Btbf9cvgYs5oL8QlwVKahS8Xp9KiCFSUwpk/UpeEZ\nveYRgwQkjjTinkX0n/eksOxaqVkkPjGa02Qz/T+4bno1fI41MSmKyEpqJIh61Hpf\njRtZSxOtbcuTjg6jI1z1JCftXLmM6Fc2pZoHU70v5HKKcoH3J1S4Cbmez3ONButp\nY3D6XKNLpo0H2B3x7SmltNI/5o+970Ly4LLqeEu9Qhsl9HpTZfB7r1y/Op3b9y9K\nC+n0o2+M1DgpkaGMmXuGPagYw6ouSHofPW5bUOzU8foBysa5TFH+t4mRCa68QAwI\nCsz3rJ/o//R0OiHwOtRFYnJNMisjfINmcsOMrxE0LU/9yFweYncS+VwtGsQQaNS5\nKl5g7874svxv5VH7vUJzlkaG+Ghb/2CQ8l6DCg9qW9c1qvAE38acLbAFrU+W/t2Z\nmpiuKDpPbYucYdL5WteukJTLA8miVlHqI1Y63f4vtokrrb2BOnhPSJpqct8iv/jB\nQEZvs1fp6377AIJ7vIBZHG0+dZfvhI8rcvzrFi2SCaOt2zKX75yZc0jjMEnGyITU\nZgEJAhWYp0dXHnC69jj4qTXShJZL2J+3ZAt0/QNnLvk5UeCcProwq3Cdh6YSGatM\nfS/D+9w/fJ9QVXoBeoydjfLXA/NCKG41he2ToHF3CF/haPlOnFkpo6hK3sFVagX6\n7VKAvy4X/Q==\n=UGAD\n-----END PGP MESSAGE-----\n",
+                                "fp": "2084CBF8F83DB89413E749CDFCD8AE5312BAEEB4"
+                        }
+                ],
+                "unencrypted_suffix": "_unencrypted",
+                "version": "3.7.1"
+        }
+}
