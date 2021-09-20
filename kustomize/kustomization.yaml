@@ -7,11 +7,10 @@ resources:
 configMapGenerator:
   - envs:
       - envs
-      pluginType: builtin
     name: envs
 secretGenerator:
-- name: mysecrets
-  envs:
-    - envs
+  - envs:
+      - envs
+    name: secrets
 generatorOptions:
   disableNameSuffixHash: true
