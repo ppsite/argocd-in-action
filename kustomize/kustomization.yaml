@@ -5,8 +5,7 @@ resources:
   - deployment.yaml
   - service.yaml
 configMapGenerator:
-  - name: envs
-    files:
-      - envs.yaml
+  - envs.yaml
+    name: envs
 generatorOptions:
   disableNameSuffixHash: true
