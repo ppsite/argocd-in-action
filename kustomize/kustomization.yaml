@@ -6,7 +6,7 @@ resources:
   - service.yaml
 configMapGenerator:
   - envs:
-      - envs.yaml
+      - envs
     name: envs
 generatorOptions:
   disableNameSuffixHash: true
