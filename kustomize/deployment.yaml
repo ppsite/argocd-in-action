@@ -37,17 +37,17 @@ spec:
                   name: db-connection
                   key: DB_USERNAME
             - name: DB_PASSWORD
-                valueFrom:
-                  secretKeyRef:
-                    name: db-connection
-                    key: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-connection
+                  key: DB_PASSWORD
             - name: DB_HOST
-                valueFrom:
-                  secretKeyRef:
-                    name: db-connection
-                    key: DB_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: db-connection
+                  key: DB_HOST
             - name: DB_PORT
-                valueFrom:
-                  secretKeyRef:
-                    name: db-connection
-                    key: DB_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: db-connection
+                  key: DB_PORT
