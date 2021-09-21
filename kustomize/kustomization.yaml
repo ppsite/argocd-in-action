@@ -4,13 +4,4 @@ resources:
   - namespace.yaml
   - deployment.yaml
   - service.yaml
-configMapGenerator:
-  - envs:
-      - envs
-    name: envs
-secretGenerator:
-  - envs:
-      - envs
-    name: secrets
-generatorOptions:
-  disableNameSuffixHash: true
+  - secret.yaml

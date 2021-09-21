@@ -25,6 +25,29 @@ spec:
             - name: http-5000
               containerPort: 5000
               protocol: TCP
-          envFrom:
-            - configMapRef:
-                name: envs
+          env:
+            - name: DB_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: db-connection
+                  key: DB_NAME
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: db-connection
+                  key: DB_USERNAME
+            - name: DB_PASSWORD
+                valueFrom:
+                  secretKeyRef:
+                    name: db-connection
+                    key: DB_PASSWORD
+            - name: DB_HOST
+                valueFrom:
+                  secretKeyRef:
+                    name: db-connection
+                    key: DB_HOST
+            - name: DB_PORT
+                valueFrom:
+                  secretKeyRef:
+                    name: db-connection
+                    key: DB_PORT
