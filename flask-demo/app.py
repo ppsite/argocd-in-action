@@ -17,7 +17,7 @@ def hello_world():
     <p>Hello, World!</p>
     <p>---something important from environ---</p>
     <p>DB_NAME={DB_NAME}</p>
-    <p>DB_NAME={DB_USERNAME}</p>
+    <p>DB_USERNAME={DB_USERNAME}</p>
     <p>DB_PASSWORD={DB_PASSWORD}</p>
     <p>DB_HOST={DB_HOST}</p>
     <p>DB_PORT={DB_PORT}</p>
