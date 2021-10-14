@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  generateName: app-wxwork-
+  name: app-wxwork
   namespace: argocd
   annotations:
     argocd.argoproj.io/hook: PreSync
