@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: app-wxwork-
+  namespace: argocd
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+      - name: wxwork-notification
+        image: curlimages/curl
+        command:
+          - "curl"
+          - "--request"
+          - "POST"
+          - "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b291a492-62be-406a-9b65-13cd2061045b"
+          - "--header"
+          - "'Content-Type: application/json'"
+          - "--data-raw"
+          - "{\"msgtype\": \"text\",\"text\": {\"content\": \"hello world\"}}"
+      restartPolicy: Never
+  backoffLimit: 1
