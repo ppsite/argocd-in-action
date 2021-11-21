@@ -5,10 +5,10 @@ metadata:
   namespace: argocd
   annotations:
     argocd.argoproj.io/hook: PostSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:
     spec:
+      ttlSecondsAfterFinished: 10
       containers:
       - name: wxwork-notification
         image: curlimages/curl

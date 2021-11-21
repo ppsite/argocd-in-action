@@ -6,3 +6,4 @@ resources:
   - service.yaml
   - secret.yaml
   - post-sync.yaml
+  - pre-sync.yaml
