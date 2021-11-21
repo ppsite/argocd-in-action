@@ -6,9 +6,9 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PostSync
 spec:
+  ttlSecondsAfterFinished: 10
   template:
     spec:
-      ttlSecondsAfterFinished: 10
       containers:
       - name: wxwork-notification
         image: curlimages/curl
